@@ -1,0 +1,10 @@
+---
+repos:
+  - repo: local
+    hooks:
+      - id: validate-keepassxc-config
+        name: Validate KeePassXC configuration file
+        files: keepassxc\.ini$
+        entry: python3 ./scripts/validate-keepassxc-config.py
+        language: python
+        pass_filenames: true

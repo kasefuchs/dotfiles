@@ -1,0 +1,13 @@
+[user]
+  name = {{ .name }}
+  email = {{ .email }}
+  signingkey = {{ .publicSSHKey }}
+
+[gpg]
+  format = ssh
+
+[tag]
+  gpgSign = true
+
+[commit]
+  gpgsign = true

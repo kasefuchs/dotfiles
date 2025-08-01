@@ -2,9 +2,11 @@
 repos:
   - repo: local
     hooks:
-      - id: validate-keepassxc-config
-        name: Validate KeePassXC configuration file
+      - id: reject-keepassxc-keeshare
+        name: Reject KeeShare-enabled KeePassXC config
+        args:
+          - --content=[KeeShare]
+        entry: bash ./scripts/reject-on-content.sh
         files: keepassxc\.ini$
-        entry: python3 ./scripts/validate-keepassxc-config.py
-        language: python
+        language: system
         pass_filenames: true

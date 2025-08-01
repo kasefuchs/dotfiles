@@ -1,0 +1,9 @@
+#!/bin/bash
+
+output_id=$(kscreen-doctor -j | jq '.outputs[] | select(.connected == true) | .id' | head -n1)
+current_rotation=$(kscreen-doctor -j | jq ".outputs[] | select(.id == $output_id) | .rotation")
+
+declare -A rotation_map=([1]="left" [2]="inverted" [4]="right" [8]="normal")
+next_rotation=${rotation_map[$current_rotation]}
+
+kscreen-doctor output.$output_id.rotation.$next_rotation

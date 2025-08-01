@@ -6,7 +6,7 @@ repos:
         name: Reject KeeShare-enabled KeePassXC config
         args:
           - --content=[KeeShare]
-        entry: bash ./scripts/reject-on-content.sh
+        entry: bash scripts/reject-on-content.sh
         files: keepassxc\.ini$
         language: system
         pass_filenames: true

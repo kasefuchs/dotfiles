@@ -1,3 +1,8 @@
 [git]
 autoCommit = true
 commitMessageTemplateFile = ".chezmoitemplates/commit_message.tmpl"
+
+[data]
+name = {{ promptString "Enter your name: " | quote }}
+email = {{ promptString "Enter your email: " | quote }}
+publicSSHKey = {{ promptString "Enter your public SSH key: " | quote }}

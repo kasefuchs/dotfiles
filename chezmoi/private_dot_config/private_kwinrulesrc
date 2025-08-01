@@ -1,0 +1,13 @@
+[301adfa6-6b18-45bd-a32e-162c9d3065a4]
+Description=Window settings for Google Chrome Picture-in-Picture
+above=true
+aboverule=2
+title=Picture in picture
+titlematch=1
+types=1
+wmclass=chrome
+wmclassmatch=1
+
+[General]
+count=1
+rules=301adfa6-6b18-45bd-a32e-162c9d3065a4

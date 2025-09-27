@@ -9,10 +9,6 @@ encryption = "age"
 identity = "~/.config/age/keys.txt"
 recipient = {{ $agePublicKey | quote }}
 
-[git]
-autoCommit = true
-commitMessageTemplateFile = ".chezmoitemplates/commit_message.tmpl"
-
 [data]
 name = {{ $name | quote }}
 email = {{ $email | quote }}

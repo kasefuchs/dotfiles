@@ -1,0 +1,6 @@
+---
+version: 1
+git_protocol: ssh
+editor: micro
+prompt: enabled
+pager: delta -s

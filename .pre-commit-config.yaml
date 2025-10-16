@@ -1,16 +1,5 @@
 ---
 repos:
-  - repo: local
-    hooks:
-      - id: reject-keepassxc-keeshare
-        name: reject keeshare-enabled keepassxc config
-        args:
-          - --content=[KeeShare]
-        entry: bash scripts/reject-on-content.sh
-        files: keepassxc\.ini$
-        language: system
-        pass_filenames: true
-
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:

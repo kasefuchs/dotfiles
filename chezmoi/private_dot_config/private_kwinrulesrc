@@ -1,25 +1,8 @@
-[301adfa6-6b18-45bd-a32e-162c9d3065a4]
-Description=Window settings for Google Chrome Picture-in-Picture
-above=true
-aboverule=2
-title=Picture in picture
-titlematch=1
-types=1
-wmclass=chrome
-wmclassmatch=1
+[General]
+count=3
+rules=firefox-pip,google-chrome-pip,waterfox-pip
 
-[3ba349be-b497-435d-a290-467fc8f1cc96]
-Description=Window settings for Waterfox Picture-in-Picture
-above=true
-aboverule=2
-title=Picture-in-Picture
-titlematch=1
-types=1
-wmclass=waterfox waterfox-default
-wmclasscomplete=true
-wmclassmatch=1
-
-[63d017ae-4fc4-4dbd-ba52-7ba2be646e49]
+[firefox-pip]
 Description=Window settings for Firefox Picture-in-Picture
 above=true
 aboverule=2
@@ -27,8 +10,25 @@ title=Picture-in-Picture
 titlematch=1
 types=1
 wmclass=firefox
-wmclassmatch=1
+wmclassmatch=2
 
-[General]
-count=3
-rules=3ba349be-b497-435d-a290-467fc8f1cc96,63d017ae-4fc4-4dbd-ba52-7ba2be646e49,301adfa6-6b18-45bd-a32e-162c9d3065a4
+[google-chrome-pip]
+Description=Window settings for Google Chrome Picture-in-Picture
+above=true
+aboverule=2
+title=Picture in picture
+titlematch=1
+types=1
+wmclass=chrome
+wmclassmatch=2
+
+[waterfox-pip]
+Description=Window settings for Waterfox Picture-in-Picture
+above=true
+aboverule=2
+title=Picture-in-Picture
+titlematch=1
+types=1
+wmclass=waterfox
+wmclasscomplete=true
+wmclassmatch=2

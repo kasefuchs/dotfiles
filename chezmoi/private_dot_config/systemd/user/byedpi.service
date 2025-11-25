@@ -1,0 +1,21 @@
+[Unit]
+Description=byedpi service
+Documentation=https://github.com/hufrea/byedpi
+After=network.target nss-lookup.target network-online.target
+
+[Service]
+Type=simple
+
+ExecStart=/usr/bin/ciadpi $OPTIONS
+ExecReload=/bin/kill -HUP $MAINPID
+
+EnvironmentFile=%E/byedpi.conf
+
+StandardOutput=journal
+StandardError=journal
+
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=default.target

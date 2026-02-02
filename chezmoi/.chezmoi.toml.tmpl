@@ -1,0 +1,16 @@
+{{ $name := promptStringOnce . "name" "Enter your name: " "kasefuchs" }}
+{{ $email := promptStringOnce . "email" "Enter your email: " "kasefuchs@protonmail.com" }}
+{{ $sshPublicKey := promptStringOnce . "sshPublicKey" "Enter your public SSH key: " (index (gitHubKeys $name) 0).Key }}
+{{ $agePublicKey := promptStringOnce . "agePublicKey" "Enter your public AGE key: " }}
+
+encryption = "age"
+
+[age]
+identity = "~/.config/age/keys.txt"
+recipient = {{ $agePublicKey | quote }}
+
+[data]
+name = {{ $name | quote }}
+email = {{ $email | quote }}
+sshPublicKey = {{ $sshPublicKey | quote }}
+agePublicKey = {{ $agePublicKey | quote }}

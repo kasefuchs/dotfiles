@@ -1,0 +1,23 @@
+[Unit]
+Description=sing-box service
+Documentation=https://sing-box.sagernet.org
+After=network.target nss-lookup.target network-online.target
+
+[Service]
+Type=simple
+
+ExecStartPre=-/usr/bin/sudo -n /usr/bin/setcap CAP_NET_ADMIN+ep /usr/bin/sing-box
+ExecStart=/usr/bin/sing-box -D $STATE_DIRECTORY -c ${CONFIGURATION_DIRECTORY}/%i.json run
+ExecReload=/bin/kill -HUP $MAINPID
+
+StateDirectory=sing-box-%i
+ConfigurationDirectory=sing-box
+
+StandardOutput=journal
+StandardError=journal
+
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=default.target

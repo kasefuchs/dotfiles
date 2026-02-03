@@ -23,6 +23,7 @@
     "format-icons": {
       "default": ["\udb81\udd7f", "\udb81\udd80", "\udb81\udd7e"],
     },
+    "reverse-scrolling": true,
   },
   "temperature": {
     "format": "{temperatureC}°C {icon} ",
@@ -41,6 +42,8 @@
       "\udb80\udcdf",
       "\udb80\udce0",
     ],
+    "tooltip-format": "{percent}%",
+    "reverse-scrolling": true,
   },
   "power-profiles-daemon": {
     "format": "{icon} ",

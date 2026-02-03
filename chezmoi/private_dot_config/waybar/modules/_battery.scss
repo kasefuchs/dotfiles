@@ -1,0 +1,12 @@
+@use "../variables" as *;
+
+#battery {
+  &.charging,
+  &.plugged {
+    background-color: $color-container-success;
+  }
+
+  &.critical:not(.charging) {
+    background-color: $color-container-destructive;
+  }
+}

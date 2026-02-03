@@ -1,2 +1,3 @@
 [Default Applications]
 text/plain=org.kde.kate.desktop
+x-scheme-handler/discord=vesktop.desktop

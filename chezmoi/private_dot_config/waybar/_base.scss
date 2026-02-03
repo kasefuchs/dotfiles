@@ -1,0 +1,10 @@
+@use "variables" as *;
+
+* {
+  font-family: $font-primary, monospace;
+  font-size: $font-size;
+}
+
+window#waybar {
+  background-color: $color-background;
+}

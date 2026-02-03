@@ -1,0 +1,88 @@
+{
+  "height": 20,
+  "position": "top",
+  "modules-left": ["niri/workspaces", "niri/window"],
+  "modules-center": [],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "backlight",
+    "niri/language",
+    "power-profiles-daemon",
+    "temperature",
+    "battery",
+    "clock",
+  ],
+  "tray": {
+    "spacing": 8,
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon} ",
+    "format-muted": "\udb83\ude08 ",
+    "format-icons": {
+      "default": ["\udb81\udd7f", "\udb81\udd80", "\udb81\udd7e"]
+    }
+  },
+  "temperature": {
+    "format": "{temperatureC}°C {icon} ",
+    "format-icons": [
+      "\udb84\udcc3",
+      "\udb81\udd0f",
+      "\udb84\udcc2",
+    ],
+    "warning-threshold": 80,
+    "critical-threshold": 90
+  },
+  "backlight": {
+    "format": "{percent}% {icon} ",
+    "format-icons": [
+      "\udb80\udcda",
+      "\udb80\udcdb",
+      "\udb80\udcdc",
+      "\udb80\udcdd",
+      "\udb80\udcde",
+      "\udb80\udcdf",
+      "\udb80\udce0",
+    ],
+  },
+  "power-profiles-daemon": {
+    "format": "{icon} ",
+    "format-icons": {
+      "power-saver": "\udb83\udf86",
+      "balanced": "\udb83\u0f85",
+      "performance": "\udb81\udcc5",
+    },
+  },
+  "niri/language": {
+    "format": "{short} \uDB80\uDF0C ",
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{capacity}% {icon} ",
+    "format-full": "{capacity}% {icon} ",
+    "format-charging": "{capacity}% {icon}\udb85\udc0b ",
+    "format-plugged": "{capacity}% {icon}\uDB85\uDC0B ",
+    "tooltip-format-charging": "{timeTo} ({power}w)",
+    "format-icons": [
+      "\udb80\udc8e",
+      "\udb80\udc7a",
+      "\udb80\udc7b",
+      "\udb80\udc7c",
+      "\udb80\udc7d",
+      "\udb80\udc7e",
+      "\udb80\udc7f",
+      "\udb80\udc80",
+      "\udb80\udc81",
+      "\udb80\udc82",
+      "\udb80\udc79",
+    ],
+    "max-length": 25,
+  },
+  "clock": {
+    "format": "{:%I:%M %p} \uDB82\uDD54 ",
+    "tooltip-format": "{:%d.%m.%Y}",
+  },
+}

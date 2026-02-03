@@ -1,0 +1,33 @@
+@use "../variables" as *;
+
+#workspaces {
+  background-color: $color-container;
+  border-radius: $container-border-radius;
+
+  button {
+    color: $color-text;
+    background-color: transparent;
+
+    border: none;
+    border-radius: $container-border-radius;
+
+    padding: 0 $container-padding;
+
+    transition: 0.3s;
+
+    &:hover {
+      color: $color-text;
+      background: $color-secondary;
+    }
+
+    &.focused {
+      color: $color-container;
+      background: $color-text;
+    }
+
+    &.urgent {
+      color: $color-text;
+      background: $color-container-warning;
+    }
+  }
+}

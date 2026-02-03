@@ -1,0 +1,11 @@
+@use "../variables" as *;
+
+#temperature {
+  &.warning {
+    background-color: $color-container-warning;
+  }
+
+  &.critical {
+    background-color: $color-container-destructive;
+  }
+}

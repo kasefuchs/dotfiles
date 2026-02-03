@@ -5,11 +5,12 @@
   "modules-center": [],
   "modules-right": [
     "tray",
-    "pulseaudio",
+    "network",
     "backlight",
-    "niri/language",
     "power-profiles-daemon",
+    "pulseaudio",
     "temperature",
+    "niri/language",
     "battery",
     "clock",
   ],
@@ -20,21 +21,17 @@
     "format": "{volume}% {icon} ",
     "format-muted": "\udb83\ude08 ",
     "format-icons": {
-      "default": ["\udb81\udd7f", "\udb81\udd80", "\udb81\udd7e"]
-    }
+      "default": ["\udb81\udd7f", "\udb81\udd80", "\udb81\udd7e"],
+    },
   },
   "temperature": {
     "format": "{temperatureC}°C {icon} ",
-    "format-icons": [
-      "\udb84\udcc3",
-      "\udb81\udd0f",
-      "\udb84\udcc2",
-    ],
+    "format-icons": ["\udb84\udcc3", "\udb81\udd0f", "\udb84\udcc2"],
     "warning-threshold": 80,
-    "critical-threshold": 90
+    "critical-threshold": 90,
   },
   "backlight": {
-    "format": "{percent}% {icon} ",
+    "format": "{icon} ",
     "format-icons": [
       "\udb80\udcda",
       "\udb80\udcdb",
@@ -52,6 +49,14 @@
       "balanced": "\udb83\u0f85",
       "performance": "\udb81\udcc5",
     },
+  },
+  "network": {
+    "format-wifi": "\udb81\udda9 ",
+    "format-ethernet": "\udb80\ude00 ",
+    "format-disconnected": "\udb83\udc9b ",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "{ipaddr} via {gwaddr}",
+    "tooltip-format-disconnected": "Disconnected",
   },
   "niri/language": {
     "format": "{short} \uDB80\uDF0C ",

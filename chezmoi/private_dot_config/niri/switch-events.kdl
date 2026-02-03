@@ -1,0 +1,4 @@
+switch-events {
+  lid-close { spawn "notify-send" "The laptop lid is closed!"; }
+  lid-open { spawn "notify-send" "The laptop lid is open!"; }
+}

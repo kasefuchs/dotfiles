@@ -5,7 +5,6 @@
   "modules-center": [],
   "modules-right": [
     "tray",
-    "network",
     "backlight",
     "power-profiles-daemon",
     "pulseaudio",
@@ -52,14 +51,6 @@
       "balanced": "\udb83\u0f85",
       "performance": "\udb81\udcc5",
     },
-  },
-  "network": {
-    "format-wifi": "\udb81\udda9 ",
-    "format-ethernet": "\udb80\ude00 ",
-    "format-disconnected": "\udb83\udc9b ",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-    "tooltip-format-ethernet": "{ipaddr} via {gwaddr}",
-    "tooltip-format-disconnected": "Disconnected",
   },
   "niri/language": {
     "format": "{short} \uDB80\uDF0C ",

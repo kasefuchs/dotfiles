@@ -1,0 +1,17 @@
+[Unit]
+Description="Applet for managing network connections"
+
+After=graphical-session.target
+PartOf=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+Type=simple
+
+ExecStart=/usr/bin/nm-applet
+
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=graphical-session.target

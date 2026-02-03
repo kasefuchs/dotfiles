@@ -1,0 +1,4 @@
+layer-rule {
+  match namespace="^swww-daemon-backdrop$"
+  place-within-backdrop true
+}

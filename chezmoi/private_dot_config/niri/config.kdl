@@ -6,6 +6,7 @@
 include "animations.kdl"
 include "input.kdl"
 include "key-bindings.kdl"
+include "layer-rules.kdl"
 include "layout.kdl"
 include "miscellaneous.kdl"
 include "outputs.kdl"

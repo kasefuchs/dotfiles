@@ -6,7 +6,13 @@
     background-color: $color-container-success;
   }
 
-  &.critical:not(.charging) {
-    background-color: $color-container-destructive;
+  &:not(.charging) {
+    &.warning {
+      background-color: $color-container-warning;
+    }
+
+    &.critical {
+      background-color: $color-container-destructive;
+    }
   }
 }

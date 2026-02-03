@@ -3,6 +3,7 @@
 #backlight,
 #battery,
 #clock,
+#network,
 #language,
 #power-profiles-daemon,
 #pulseaudio,
@@ -10,8 +11,8 @@
 #tray,
 #window {
   color: $color-text;
-
   background: $color-container;
+
   border-radius: $container-border-radius;
   margin: 0 $container-gap;
   padding: 0 $container-padding;

@@ -1,8 +1,8 @@
 @use "variables" as *;
 
 * {
-  font-family: $font-primary, monospace;
   font-size: $font-size;
+  font-family: $font-family;
 }
 
 window#waybar {

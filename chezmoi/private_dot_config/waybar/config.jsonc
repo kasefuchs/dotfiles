@@ -17,21 +17,21 @@
     "spacing": 8,
   },
   "pulseaudio": {
-    "format": "{volume}% {icon} ",
-    "format-muted": "\udb83\ude08 ",
+    "format": "{volume}% {icon}",
+    "format-muted": "\udb83\ude08",
     "format-icons": {
       "default": ["\udb81\udd7f", "\udb81\udd80", "\udb81\udd7e"],
     },
     "reverse-scrolling": true,
   },
   "temperature": {
-    "format": "{temperatureC}°C {icon} ",
+    "format": "{temperatureC}°C {icon}",
     "format-icons": ["\udb84\udcc3", "\udb81\udd0f", "\udb84\udcc2"],
     "warning-threshold": 80,
     "critical-threshold": 90,
   },
   "backlight": {
-    "format": "{icon} ",
+    "format": "{icon}",
     "format-icons": [
       "\udb80\udcda",
       "\udb80\udcdb",
@@ -45,7 +45,7 @@
     "reverse-scrolling": true,
   },
   "power-profiles-daemon": {
-    "format": "{icon} ",
+    "format": "{icon}",
     "format-icons": {
       "power-saver": "\udb83\udf86",
       "balanced": "\udb83\u0f85",
@@ -53,17 +53,18 @@
     },
   },
   "niri/language": {
-    "format": "{short} \uDB80\uDF0C ",
+    "format": "{short} \uDB80\uDF0C",
   },
   "battery": {
     "states": {
       "warning": 30,
       "critical": 15,
     },
-    "format": "{capacity}% {icon} ",
-    "format-full": "{capacity}% {icon} ",
-    "format-charging": "{capacity}% {icon}\udb85\udc0b ",
-    "format-plugged": "{capacity}% {icon}\uDB85\uDC0B ",
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% {icon} \udb85\udc0b",
+    "format-plugged": "{capacity}% {icon} \uDB85\uDC0B",
+    "format-critical": "{capacity}% {icon} \udb84\ude38",
     "tooltip-format-charging": "{timeTo} ({power}w)",
     "format-icons": [
       "\udb80\udc8e",
@@ -81,7 +82,7 @@
     "max-length": 25,
   },
   "clock": {
-    "format": "{:%I:%M %p} \uDB82\uDD54 ",
+    "format": "{:%I:%M %p} \uDB82\uDD54",
     "tooltip-format": "{:%d.%m.%Y}",
   },
 }

@@ -1,14 +1,14 @@
 [Unit]
-Description="Applet for managing network connections"
+Description="A Solution to your Wayland Wallpaper Woes"
 
 After=graphical-session.target
 PartOf=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-Type=simple
+Type=notify
 
-ExecStart=/usr/bin/nm-applet
+ExecStart=/usr/bin/swww-daemon --namespace -%i
 
 Restart=on-failure
 RestartSec=3s

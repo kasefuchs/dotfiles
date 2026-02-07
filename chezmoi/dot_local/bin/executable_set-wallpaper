@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+WORK_DIR="$XDG_DATA_HOME/wallpaper"
+mkdir -p "$WORK_DIR"
+
+magick "$1" -strip "$WORK_DIR/wallpaper.jpeg"
+magick "$1" -strip -blur 0x16 "$WORK_DIR/backdrop.jpeg"
+
+swww img --namespace="-backdrop" "$WORK_DIR/backdrop.jpeg"
+swww img --namespace="-wallpaper" "$WORK_DIR/wallpaper.jpeg"

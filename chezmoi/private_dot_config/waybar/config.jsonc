@@ -12,7 +12,35 @@
     "niri/language",
     "battery",
     "clock",
+    "group/power"
   ],
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": false,
+    },
+    "modules": [
+      "custom/poweroff",
+      "custom/suspend",
+      "custom/reboot",
+    ]
+  },
+  "custom/poweroff": {
+    "format": "\udb81\udc25",
+    "tooltip": false,
+    "on-click": "systemctl poweroff"
+  },
+  "custom/suspend": {
+    "format": "\udb81\udcb2",
+    "tooltip": false,
+    "on-click": "systemctl suspend"
+  },
+  "custom/reboot": {
+    "format": "\udb81\udf09",
+    "tooltip": false,
+    "on-click": "systemctl reboot"
+  },
   "tray": {
     "spacing": 8,
   },

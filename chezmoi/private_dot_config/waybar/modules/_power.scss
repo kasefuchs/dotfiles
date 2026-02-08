@@ -1,0 +1,5 @@
+@use "../variables" as *;
+
+#power .drawer-child > * {
+  margin-right: $container-spacing;
+}

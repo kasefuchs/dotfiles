@@ -1,3 +1,6 @@
 [Default Applications]
+qtext/html=waterfox.desktop
 text/plain=org.kde.kate.desktop
+x-scheme-handler/http=waterfox.desktop
+x-scheme-handler/https=waterfox.desktop
 x-scheme-handler/discord=vesktop.desktop

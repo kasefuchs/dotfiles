@@ -8,7 +8,7 @@ Requisite=graphical-session.target
 [Service]
 Type=notify
 
-ExecStart=/usr/bin/swww-daemon --namespace -%i
+ExecStart=/usr/bin/swww-daemon --namespace "-%i"
 
 Restart=on-failure
 RestartSec=3s

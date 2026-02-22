@@ -1,0 +1,6 @@
+// Disable the hot corners.
+gestures {
+  hot-corners {
+    off
+  }
+}

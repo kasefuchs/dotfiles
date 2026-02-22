@@ -56,7 +56,20 @@ window-rule {
 }
 
 window-rule {
+  match app-id=r#"^Microsoft Windows$"#
+
+  open-maximized-to-edges true
+}
+
+window-rule {
   match app-id=r#"^org\.keepassxc\.KeePassXC$"#
 
   block-out-from "screen-capture"
+}
+
+window-rule {
+  match app-id=r#"^steam$"# title=r#"^notificationtoasts_\d+_desktop$"#
+
+  open-focused false
+  default-floating-position x=10 y=10 relative-to="bottom-right"
 }

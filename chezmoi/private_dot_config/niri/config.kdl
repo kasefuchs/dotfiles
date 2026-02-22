@@ -4,6 +4,7 @@
 // https://yalter.github.io/niri/Configuration:-Introduction
 
 include "animations.kdl"
+include "gestures.kdl"
 include "input.kdl"
 include "key-bindings.kdl"
 include "layer-rules.kdl"

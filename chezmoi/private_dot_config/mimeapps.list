@@ -1,5 +1,6 @@
 [Default Applications]
 image/png=org.gnome.Loupe.desktop;
+image/jpeg=org.gnome.Loupe.desktop
 qtext/html=waterfox.desktop
 text/plain=org.kde.kate.desktop
 x-scheme-handler/discord=vesktop.desktop

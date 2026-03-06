@@ -35,7 +35,7 @@
 
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
-/-window-rule {
+window-rule {
   geometry-corner-radius 12
   clip-to-geometry true
 }
@@ -46,6 +46,7 @@ window-rule {
   open-floating true
   default-column-width { proportion 0.25; }
   default-window-height { proportion 0.25; }
+  default-floating-position x=10 y=10 relative-to="bottom-right"
 }
 
 window-rule {

@@ -1,8 +1,9 @@
 [Default Applications]
-image/png=org.gnome.Loupe.desktop;
 image/jpeg=org.gnome.Loupe.desktop
-qtext/html=waterfox.desktop
-text/plain=org.kde.kate.desktop
+image/png=org.gnome.Loupe.desktop;
+qtext/html=chromium.desktop
+text/plain=org.gnome.TextEditor.desktop
 x-scheme-handler/discord=vesktop.desktop
-x-scheme-handler/https=waterfox.desktop
-x-scheme-handler/http=waterfox.desktop
+x-scheme-handler/figma=figma-linux.desktop
+x-scheme-handler/http=chromium.desktop
+x-scheme-handler/https=chromium.desktop

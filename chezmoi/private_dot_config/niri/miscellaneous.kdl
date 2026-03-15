@@ -29,3 +29,16 @@ hotkey-overlay {
   skip-at-startup
   hide-not-bound
 }
+
+environment {
+  QT_QPA_PLATFORM "wayland"
+}
+
+cursor {
+  xcursor-theme "breeze_cursors"
+  xcursor-size 24
+}
+
+clipboard {
+  disable-primary
+}

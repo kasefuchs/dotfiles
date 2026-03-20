@@ -53,6 +53,8 @@ window-rule {
 
 window-rule {
   match app-id=r#"^waterfox$"#
+  match app-id=r#"^chromium$"#
+  match app-id=r#"^figma-linux"#
   match app-id=r#"^jetbrains-.*"#
 
   open-maximized true

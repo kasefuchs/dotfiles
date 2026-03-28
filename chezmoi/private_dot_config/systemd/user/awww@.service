@@ -1,5 +1,5 @@
 [Unit]
-Description="A Solution to your Wayland Wallpaper Woes"
+Description="A solution to your Wayland Wallpaper Woes"
 
 After=graphical-session.target
 PartOf=graphical-session.target
@@ -8,7 +8,7 @@ Requisite=graphical-session.target
 [Service]
 Type=notify
 
-ExecStart=/usr/bin/swww-daemon --namespace "-%i"
+ExecStart=/usr/bin/awww-daemon --namespace "-%i"
 
 Restart=on-failure
 RestartSec=3s

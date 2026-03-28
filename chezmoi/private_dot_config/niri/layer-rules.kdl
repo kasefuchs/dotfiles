@@ -1,5 +1,5 @@
 layer-rule {
-  match namespace="^swww-daemon-backdrop$"
+  match namespace="^awww-daemon-backdrop$"
 
   place-within-backdrop true
 }

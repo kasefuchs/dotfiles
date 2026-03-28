@@ -7,5 +7,5 @@ mkdir -p "$WORK_DIR"
 magick "$1" -strip "$WORK_DIR/wallpaper.jpeg"
 magick "$1" -strip -blur 0x16 "$WORK_DIR/backdrop.jpeg"
 
-swww img --namespace="-backdrop" "$WORK_DIR/backdrop.jpeg"
-swww img --namespace="-wallpaper" "$WORK_DIR/wallpaper.jpeg"
+awww img --namespace="-backdrop" "$WORK_DIR/backdrop.jpeg"
+awww img --namespace="-wallpaper" "$WORK_DIR/wallpaper.jpeg"

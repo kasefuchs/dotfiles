@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 {{ range (glob (joinPath .chezmoi.sourceDir "private_dot_config/waybar/**/*.scss")) -}}
-# {{ include . | sha1sum }}
+# {{ trimPrefix (print $.chezmoi.sourceDir "/") . }} hash: {{ include . | sha256sum }}
 {{ end -}}
 
 cd $XDG_CONFIG_HOME/waybar

@@ -1,2 +1,8 @@
 default-timeout=5000
 ignore-timeout=1
+
+border-size=0
+border-radius=12
+
+text-color=#202020ff
+background-color=#d9d9d9ea

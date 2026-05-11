@@ -3,3 +3,13 @@ layer-rule {
 
   place-within-backdrop true
 }
+
+layer-rule {
+  match namespace="^launcher$"
+  /-match namespace="^notifications$"
+
+  background-effect {
+    blur true
+	  xray false
+  }
+}

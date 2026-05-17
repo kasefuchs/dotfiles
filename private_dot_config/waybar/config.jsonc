@@ -6,13 +6,14 @@
   "modules-right": [
     "tray",
     "backlight",
+    "idle_inhibitor",
     "power-profiles-daemon",
     "pulseaudio",
     "temperature",
     "niri/language",
     "battery",
     "clock",
-    "group/power"
+    "group/power",
   ],
   "group/power": {
     "orientation": "inherit",
@@ -20,26 +21,29 @@
       "transition-duration": 300,
       "transition-left-to-right": false,
     },
-    "modules": [
-      "custom/poweroff",
-      "custom/suspend",
-      "custom/reboot",
-    ]
+    "modules": ["custom/poweroff", "custom/suspend", "custom/reboot"],
   },
   "custom/poweroff": {
     "format": "\udb81\udc25",
     "tooltip": false,
-    "on-click": "systemctl poweroff"
+    "on-click": "systemctl poweroff",
   },
   "custom/suspend": {
     "format": "\udb81\udcb2",
     "tooltip": false,
-    "on-click": "systemctl suspend"
+    "on-click": "systemctl suspend",
   },
   "custom/reboot": {
     "format": "\udb81\udf09",
     "tooltip": false,
-    "on-click": "systemctl reboot"
+    "on-click": "systemctl reboot",
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "\udb80\udd76",
+      "deactivated": "\udb83\udfaa",
+    },
   },
   "tray": {
     "spacing": 8,

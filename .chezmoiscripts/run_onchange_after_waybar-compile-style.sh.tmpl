@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+{{ $root := joinPath .chezmoi.sourceDir "private_dot_config/waybar/style/" -}}
+
+{{ range (glob (joinPath $root "**/*.scss")) -}}
+# {{ trimPrefix $root . }} hash: {{ include . | sha1sum }}
+{{ end -}}
+
+sass --style=compressed --no-source-map {{ joinPath $root "style.scss" }} $XDG_CONFIG_HOME/waybar/style.css

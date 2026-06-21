@@ -57,6 +57,17 @@ window-rule {
 }
 
 window-rule {
+  match app-id=r#"^org\.pulseaudio\.pavucontrol$"#
+  match app-id=r#"^blueman-manager$"#
+  match app-id=r#"^nm-connection-editor$"#
+
+  open-focused true
+  open-floating true
+  default-column-width { proportion 0.45; }
+  default-window-height { proportion 0.45; }
+}
+
+window-rule {
   match app-id=r#"^waterfox$"#
   match app-id=r#"^chromium$"#
   match app-id=r#"^figma-linux"#

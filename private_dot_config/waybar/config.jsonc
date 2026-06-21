@@ -54,6 +54,7 @@
     "format-icons": {
       "default": ["\udb81\udd7f", "\udb81\udd80", "\udb81\udd7e"],
     },
+    "on-click": "pavucontrol",
     "reverse-scrolling": true,
   },
   "temperature": {
@@ -86,6 +87,7 @@
   },
   "niri/language": {
     "format": "{short} \uDB80\uDF0C",
+    "on-click": "niri msg action switch-layout next",
   },
   "battery": {
     "states": {

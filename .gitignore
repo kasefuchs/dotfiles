@@ -1,7 +1,6 @@
 # --- IDE / Editor ---
-# JetBrains
-.idea/
-*.iml
-
-# VSCode
 .vscode/
+.idea/
+.gram/
+.zed/
+*.iml

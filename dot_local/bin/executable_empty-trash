@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+
+from datetime import datetime, timedelta
+
+import typer
+from gi.repository import Gio
+
+app = typer.Typer()
+
+
+@app.command()
+def main(days: int = typer.Argument(7), dry_run: bool = typer.Option(False)):
+    cutoff = datetime.now() - timedelta(days=days)
+    trash = Gio.File.new_for_uri("trash:///")
+
+    enumerator = trash.enumerate_children(
+        "standard::name,trash::deletion-date",
+        Gio.FileQueryInfoFlags.NONE,
+        None,
+    )
+
+    while info := enumerator.next_file(None):
+        date = info.get_attribute_string("trash::deletion-date")
+        if not date:
+            continue
+
+        if datetime.fromisoformat(date) < cutoff:
+            file = trash.get_child(info.get_name())
+
+            if dry_run:
+                typer.echo(file.get_uri())
+            else:
+                try:
+                    file.delete(None)
+                    typer.echo(f"deleted: {file.get_basename()}")
+                except Exception as e:
+                    typer.echo(
+                        f"warning: could not remove {file.get_basename()}: {e}",
+                        err=True,
+                    )
+
+
+if __name__ == "__main__":
+    app()

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+days="${1:-3}"
+
+find "$XDG_DOWNLOAD_DIR" \
+  -mindepth 1 \
+  -maxdepth 1 \
+  -mtime "+$days" \
+  -exec gio trash {} +

@@ -1,6 +1,0 @@
-[Unit]
-Description=Empty trash
-
-[Service]
-Type=oneshot
-ExecStart=%h/.local/bin/empty-trash

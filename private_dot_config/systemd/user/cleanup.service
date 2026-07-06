@@ -1,0 +1,7 @@
+[Unit]
+Description=Daily cleanup tasks
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/empty-downloads 3
+ExecStart=%h/.local/bin/empty-trash 7

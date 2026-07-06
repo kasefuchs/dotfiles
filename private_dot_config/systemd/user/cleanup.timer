@@ -1,5 +1,5 @@
 [Unit]
-Description=Empty trash daily
+Description=Run cleanup daily
 
 [Timer]
 OnCalendar=daily

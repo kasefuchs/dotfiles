@@ -6,4 +6,4 @@
 # {{ trimPrefix $root . }} hash: {{ include . | sha1sum }}
 {{ end -}}
 
-sass --style=compressed --no-source-map {{ joinPath $root "style.scss" }} $XDG_CONFIG_HOME/waybar/style.css
+sass --style=compressed --no-source-map {{ joinPath $root "style.scss" }} {{ joinPath .chezmoi.destDir ".config/waybar/style.css" }}

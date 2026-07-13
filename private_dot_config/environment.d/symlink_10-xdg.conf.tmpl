@@ -1,1 +1,4 @@
-{{ .chezmoi.homeDir }}/.config/user-dirs.dirs
+{{ template "relpath.tmpl" (dict
+  "target" (dir .chezmoi.targetFile)
+  "source" (joinPath .chezmoi.destDir ".config/user-dirs.dirs")
+) }}

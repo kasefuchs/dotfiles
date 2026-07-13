@@ -1,1 +1,4 @@
-{{ .chezmoi.homeDir }}/.config/systemd/user/nm-applet.service
+{{ template "relpath.tmpl" (dict
+  "target" (dir .chezmoi.targetFile)
+  "source" (joinPath .chezmoi.destDir ".config/systemd/user/nm-applet.service")
+) }}

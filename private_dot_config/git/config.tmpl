@@ -1,22 +1,5 @@
-[user]
-  name = {{ .name }}
-  email = {{ .email }}
-  signingkey = {{ .sshPublicKey }}
-
-[core]
-  pager = delta
-
-[gpg]
-  format = ssh
-
-[tag]
-  gpgSign = true
-
-[commit]
-  gpgSign = true
-
-[filter "lfs"]
-  clean = git-lfs clean -- %f
-  process = git-lfs filter-process
-  required = true
-  smudge = git-lfs smudge -- %f
+[include]
+  path = ~/.gitconfig-local
+  {{- range glob (joinPath .chezmoi.sourceDir (dir .chezmoi.sourceFile) "conf.d/*") }}
+  path = conf.d/{{ base . }}
+  {{- end }}

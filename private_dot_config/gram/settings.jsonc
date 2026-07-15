@@ -2,7 +2,7 @@
   "helix_mode": true,
   "tab_size": 2,
   "git_panel": {
-    "tree_view": true
+    "tree_view": true,
   },
   "ui_font_size": 14.0,
   "ui_font_family": "Noto Sans",
@@ -12,7 +12,7 @@
   "vim_mode": false,
   "project_panel": {
     "file_icons": true,
-    "folder_icons": true
+    "folder_icons": true,
   },
   "icon_theme": {
     "mode": "system",

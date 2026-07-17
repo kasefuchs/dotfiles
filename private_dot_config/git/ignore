@@ -1,0 +1,36 @@
+# Editors
+.idea/
+.vscode/
+.zed/
+.gram/
+*.iml
+
+# Secrets
+.env
+.env.*
+
+# Logs
+*.log
+
+# Backups
+*.bak
+
+# OS
+.DS_Store/
+Thumbs.db
+desktop.ini
+
+# Artifacts
+dist/
+build/
+
+# Slop
+digest.txt
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+.venv/
+*.pyc

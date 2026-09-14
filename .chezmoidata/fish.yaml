@@ -1,4 +1,5 @@
 fish:
   paths:
     - .local/bin
+    - .cargo/bin
     - .krew/bin

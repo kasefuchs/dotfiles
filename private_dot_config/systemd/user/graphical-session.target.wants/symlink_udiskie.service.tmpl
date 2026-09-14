@@ -1,0 +1,4 @@
+{{ template "relpath.tmpl" (dict
+  "target" (dir .chezmoi.targetFile)
+  "source" (joinPath .chezmoi.destDir ".config/systemd/user/udiskie.service")
+) }}

@@ -38,8 +38,8 @@ binds {
 
 // Example media keys mapping using playerctl.
 // This will work with any MPRIS-enabled media player.
-    XF86AudioPlay        allow-when-locked=true { spawn "playerctl" "play"; }
-    XF86AudioPause       allow-when-locked=true { spawn "playerctl" "pause"; }
+    XF86AudioPlay        allow-when-locked=true { spawn "playerctl" "play-pause"; }
+    XF86AudioPause       allow-when-locked=true { spawn "playerctl" "play-pause"; }
     XF86AudioStop        allow-when-locked=true { spawn "playerctl" "stop"; }
     XF86AudioPrev        allow-when-locked=true { spawn "playerctl" "previous"; }
     XF86AudioNext        allow-when-locked=true { spawn "playerctl" "next"; }

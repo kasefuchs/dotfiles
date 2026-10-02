@@ -1,5 +1,5 @@
 [include]
-  path = ~/.gitconfig-local
+  path = conf.d/local
   {{- range glob (joinPath .chezmoi.sourceDir (dir .chezmoi.sourceFile) "conf.d/*") }}
   path = conf.d/{{ base . }}
   {{- end }}

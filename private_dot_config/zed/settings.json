@@ -1,0 +1,46 @@
+
+{
+  "buffer_font_family": "JetBrains Mono",
+  "cli_default_open_behavior": "existing_window",
+  "relative_line_numbers": "enabled",
+  "helix_mode": true,
+  "use_podman": true,
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "tab_size": 2,
+  "git_panel": {
+    "dock": "left",
+    "tree_view": true
+  },
+  "agent_servers": {
+    "opencode": {
+      "type": "registry",
+      "default_config_options": {
+        "mode": "plan"
+      }
+    }
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Material Icon Theme"
+  },
+  "ui_font_size": 16.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Carbonfox - opaque"
+  }
+}

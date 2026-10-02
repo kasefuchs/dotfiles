@@ -22,7 +22,6 @@ desktop.ini
 
 # Artifacts
 dist/
-build/
 
 # Slop
 digest.txt

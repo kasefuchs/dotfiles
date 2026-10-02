@@ -70,16 +70,15 @@ window-rule {
 window-rule {
   match app-id=r#"^waterfox$"#
   match app-id=r#"^chromium$"#
-  match app-id=r#"^figma-linux"#
-  match app-id=r#"^jetbrains-.*"#
 
   open-maximized true
 }
 
 window-rule {
   match app-id=r#"^Microsoft Windows$"#
+  match app-id=r#"^steam$"# title=r#"^Steam Big Picture Mode$"#
 
-  open-maximized-to-edges true
+  open-fullscreen true
 }
 
 window-rule {

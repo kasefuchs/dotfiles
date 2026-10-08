@@ -1,3 +1,4 @@
 config-file = ?auto/theme.ghostty
 background-opacity = 0.85
 gtk-single-instance = false
+confirm-close-surface = false

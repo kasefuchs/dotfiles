@@ -1,0 +1,11 @@
+[Unit]
+Description=Terminal Multiplexer Activation Socket
+Documentation=man:tmux(1)
+
+[Socket]
+ListenStream=/tmp/tmux-%U/default
+SocketMode=0600
+DirectoryMode=0700
+
+[Install]
+WantedBy=sockets.target

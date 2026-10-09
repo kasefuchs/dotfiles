@@ -8,7 +8,8 @@
     "backlight",
     "idle_inhibitor",
     "power-profiles-daemon",
-    "pulseaudio",
+    "pulseaudio#input",
+    "pulseaudio#output",
     "temperature",
     "niri/language",
     "battery",
@@ -48,13 +49,22 @@
   "tray": {
     "spacing": 8,
   },
-  "pulseaudio": {
+  "pulseaudio#output": {
     "format": "{volume}% {icon}",
     "format-muted": "\udb83\ude08",
     "format-icons": {
       "default": ["\udb81\udd7f", "\udb81\udd80", "\udb81\udd7e"],
     },
     "on-click": "pavucontrol",
+    "reverse-scrolling": true,
+  },
+  "pulseaudio#input": {
+    "format": "{format_source}",
+    "format-source": "{volume}% \udb80\udf6c",
+    "format-source-muted": "\udb80\udf6d",
+    "on-click": "pavucontrol",
+    "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%",
     "reverse-scrolling": true,
   },
   "temperature": {

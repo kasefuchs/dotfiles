@@ -3,3 +3,4 @@ fish:
     - .local/bin
     - .cargo/bin
     - .krew/bin
+    - .spicetify

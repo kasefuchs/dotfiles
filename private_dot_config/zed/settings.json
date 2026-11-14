@@ -1,4 +1,3 @@
-
 {
   "buffer_font_family": "JetBrains Mono",
   "cli_default_open_behavior": "existing_window",
@@ -18,6 +17,13 @@
     "dock": "right",
     "favorite_models": [],
     "model_parameters": []
+  },
+  "show_edit_predictions": false,
+  "edit_predictions": {
+    "ollama": {
+      "model": "qwen2.5-coder:1.5b"
+    },
+    "provider": "ollama"
   },
   "tab_size": 2,
   "git_panel": {

@@ -1,7 +1,7 @@
 {
   "height": 24,
   "position": "top",
-  "modules-left": ["niri/workspaces", "niri/window"],
+  "modules-left": ["ext/workspaces", "niri/window"],
   "modules-center": [],
   "modules-right": [
     "tray",
@@ -129,4 +129,7 @@
     "format": "{:%I:%M %p} \uDB82\uDD54",
     "tooltip-format": "{:%d.%m.%Y}",
   },
+  "ext/workspaces": {
+    "on-click": "activate"
+  }
 }
